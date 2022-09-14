@@ -100,7 +100,7 @@ module "weekly_backup_policy" {
                     },
                     "lifecycle": {
                         "delete_after_days": {
-                            "@@assign": "7"
+                            "@@assign": "30"
                         }
                     },
                     "target_backup_vault_name": {
@@ -171,7 +171,7 @@ module "monthly_backup_policy" {
                     },
                     "lifecycle": {
                         "delete_after_days": {
-                            "@@assign": "7"
+                            "@@assign": "365"
                         }
                     },
                     "target_backup_vault_name": {
@@ -242,7 +242,7 @@ module "yearly_backup_policy" {
                     },
                     "lifecycle": {
                         "delete_after_days": {
-                            "@@assign": "7"
+                            "@@assign": "3650"
                         }
                     },
                     "target_backup_vault_name": {
